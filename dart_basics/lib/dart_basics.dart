@@ -1,5 +1,3 @@
-
-// дз 1
 int noc(int a, int b){
   if(b == 0){
     return a;
@@ -12,10 +10,10 @@ nod(int c, int d){
   return c * d / noc(c, d);
 }
 
-
-// дз 2
-  int num = 6;
+ int num = 6;
  double num2 = num.toDouble();
  int num3 = num2.round();
-
  int num4 = num2.toInt();
+
+ final one = int.parse('1');
+ final two = double.parse('2.2'); 
