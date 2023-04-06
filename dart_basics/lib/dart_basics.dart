@@ -17,3 +17,5 @@ nod(int c, int d){
 
  final one = int.parse('1');
  final two = double.parse('2.2'); 
+
+const iterable = ['Salad', 'Popcorn', 'Toast'];
