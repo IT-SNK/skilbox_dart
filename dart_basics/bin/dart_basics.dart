@@ -5,14 +5,14 @@ import '../lib/task_second.dart';
 import '../lib/task_three.dart';
 
 void main() {
-  print(noc(7, 9));
-  print(nod(5, 3));
+  print(task1_1.nod(4, 5));
+  print(task1_2.noc(3, 9));
 
-  print(' $num, 2)$num2, 3)$num3, 4) $num4,');
+  print(task2.resultSecondTsk());
+  print(task2.resultSecondTsk1());
+  print(task2.resultSecondTsk2());
 
-  print('$two, $one');
-
-  print(numLists);
+  print(task3.resultThreeTask());
 
   var admin = AdminUser('admin@mail.ru');
   var ivan = GeneralUser('ivan@gmail.com');

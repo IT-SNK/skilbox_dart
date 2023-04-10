@@ -1,4 +1,16 @@
-int num = 6;
-double num2 = num.toDouble();
-int num3 = num2.round();
-int num4 = num2.toInt();
+class SecondTask {
+  int num = 6;
+  dynamic resultSecondTsk() {
+    return num.toDouble();
+  }
+
+  dynamic resultSecondTsk1() {
+    return num.round();
+  }
+
+  dynamic resultSecondTsk2() {
+    return num.toInt();
+  }
+}
+
+final task2 = SecondTask();
