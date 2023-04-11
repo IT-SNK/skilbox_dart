@@ -12,5 +12,5 @@ class DelimetersCalculator {
   }
 }
 
-final task1_1 = DelimetersCalculator();
-final task1_2 = DelimetersCalculator();
+final task1_1 = DelimetersCalculator().noc(4, 9);
+final task1_2 = DelimetersCalculator().nod(3, 7);

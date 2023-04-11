@@ -6,4 +6,4 @@ class ThreeTask {
   }
 }
 
-final task3 = ThreeTask();
+final task3 = ThreeTask().resultThreeTask();

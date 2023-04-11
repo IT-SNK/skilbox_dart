@@ -40,3 +40,15 @@ class UserManager<T extends User> {
     }
   }
 }
+
+task_8() {
+  var admin = AdminUser('admin@mail.ru');
+  var ivan = GeneralUser('ivan@gmail.com');
+  var alisa = GeneralUser('alisa@yandex.ru');
+  var manager = UserManager()
+    ..add(admin)
+    ..add(ivan)
+    ..add(alisa);
+
+  manager.printUsers();
+}
