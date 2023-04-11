@@ -5,5 +5,3 @@ class ThreeTask {
     return 'IntParse: $one, DoubleParse$two';
   }
 }
-
-final task3 = ThreeTask().resultThreeTask();

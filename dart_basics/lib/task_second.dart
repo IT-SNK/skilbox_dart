@@ -12,7 +12,3 @@ class SecondTask {
     return num.toInt();
   }
 }
-
-final task2 = SecondTask().resultSecondTsk();
-final task2_1 = SecondTask().resultSecondTsk1();
-final task2_2 = SecondTask().resultSecondTsk2();
