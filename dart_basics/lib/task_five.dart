@@ -49,3 +49,10 @@ class OnlyUniqueNumbersSet {
     return set;
   }
 }
+
+final task5 =
+    'filterNumbers: ${OnlyNumbers.find(Words('Hi 1 test 2 yes 176'))}';
+final task5_2 =
+    'WordsIncludingStats: ${WordsIncludingStats.compute(Words('hi test hi spam'))}';
+final task5_3 =
+    'NumbersSet: ${OnlyUniqueNumbersSet.create(Words('two hi one nine hi two zero zero'))}';
