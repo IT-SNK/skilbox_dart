@@ -1,27 +1,24 @@
 import '../lib/task_first.dart';
 import '../lib/task_eight.dart';
-
 import '../lib/task_five.dart';
 import '../lib/task_second.dart';
 import '../lib/task_three.dart';
 
 void main() {
   //task1
-  final task1_1 = DelimetersCalculator().noc(4, 9);
-  final task1_2 = DelimetersCalculator().nod(3, 7);
-  print(task1_1);
-  print(task1_2);
+  final task1 = DelimetersCalculator();
+  print(task1.noc(4, 9));
+  print(task1.nod(3, 6));
 //task2
-  final task2 = SecondTask().resultSecondTsk();
-  final task2_1 = SecondTask().resultSecondTsk1();
-  final task2_2 = SecondTask().resultSecondTsk2();
-  print(task2);
-  print(task2_1);
-  print(task2_2);
+  final task2 = SecondTask();
+
+  print(task2.resultSecondTsk());
+  print(task2.resultSecondTsk1());
+  print(task2.resultSecondTsk2());
 
 //task3
-  final task3 = ThreeTask().resultThreeTask();
-  print(task3);
+  final task3 = ThreeTask();
+  print(task3.resultThreeTask());
 //task5
   final task5 =
       'filterNumbers: ${OnlyNumbers.find(Words('Hi 1 test 2 yes 176'))}';
