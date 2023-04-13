@@ -1,34 +1,34 @@
 import '../lib/task_first.dart';
 import '../lib/task_eight.dart';
 import '../lib/task_five.dart';
+import '../lib/task_four.dart';
 import '../lib/task_second.dart';
 import '../lib/task_three.dart';
 
 void main() {
   //task1
   final task1 = DelimetersCalculator();
-  print(task1.noc(4, 9));
-  print(task1.nod(3, 6));
-//task2
+  print(task1.nod(3, 4));
+  print(task1.noc(-6, -2));
+// //task2
   final task2 = SecondTask();
 
-  print(task2.resultSecondTsk());
-  print(task2.resultSecondTsk1());
-  print(task2.resultSecondTsk2());
+  print(task2.resultSecondTask(x));
 
-//task3
+// //task3
   final task3 = ThreeTask();
-  print(task3.resultThreeTask());
-//task5
-  final task5 =
-      'filterNumbers: ${OnlyNumbers.find(Words('Hi 1 test 2 yes 176'))}';
-  print(task5);
-  final task5_2 =
-      'WordsIncludingStats: ${WordsIncludingStats.compute(Words('hi test hi spam'))}';
-  print(task5_2);
-  final task5_3 =
-      'NumbersSet: ${OnlyUniqueNumbersSet.create(Words('two hi one nine hi two zero zero'))}';
-  print(task5_3);
+  print(task3.resultThreeTask(text));
+//task4
+  final task4 = TaskFour().taskFourMethod(words);
+
+  Map<String, int> task4_result = task4;
+  print(task4_result);
+// //task5
+  final task5 = TaskFive();
+
+  Set<int> task5_result = task5.findingnumbers(listNumbers);
+  print(task5_result);
+
 //task8
   var admin = AdminUser('admin@mail.ru');
   var ivan = GeneralUser('ivan@gmail.com');

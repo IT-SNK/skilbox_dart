@@ -1,51 +1,40 @@
-class Words {
-  late final List<String> list;
+String listNumbers = 'one, two, zero, zero';
 
-  Words(String str) {
-    list = str.trim().split(' ');
-  }
-}
-
-class OnlyNumbers {
-  static List<int> find(Words words) {
-    return words.list.map((e) => int.tryParse(e)).whereType<int>().toList();
-  }
-}
-
-typedef WordsStatsMap = Map<String, int>;
-
-class WordsIncludingStats {
-  static WordsStatsMap compute(Words words) {
-    WordsStatsMap stats = {};
-    for (var word in words.list) {
-      stats[word] = (stats[word] ?? 0) + 1;
-    }
-
-    return stats;
-  }
-}
-
-Map<String, int> _numbers = {
-  'zero': 0,
-  'one': 1,
-  'two': 2,
-  'three': 3,
-  'four': 4,
-  'five': 5,
-  'six': 6,
-  'seven': 7,
-  'eight': 8,
-  'nine': 9,
-};
-
-class OnlyUniqueNumbersSet {
-  static Set<int> create(Words words) {
-    Set<int> set = {};
-    for (var word in words.list) {
-      if (_numbers.containsKey(word)) {
-        set.add(_numbers[word]!);
+class TaskFive {
+  Set<int> findingnumbers(String numbers) {
+    Set<int> result = {};
+    List<String> words = numbers.split(', ');
+    for (String word in words) {
+      if (word == 'zero') {
+        result.add(0);
+      }
+      if (word == 'one') {
+        result.add(1);
+      }
+      if (word == 'two') {
+        result.add(2);
+      }
+      if (word == 'three') {
+        result.add(3);
+      }
+      if (word == 'four') {
+        result.add(4);
+      }
+      if (word == 'five') {
+        result.add(5);
+      }
+      if (word == 'six') {
+        result.add(6);
+      }
+      if (word == 'seven') {
+        result.add(7);
+      }
+      if (word == 'eight') {
+        result.add(8);
+      } else if (word == 'nine') {
+        result.add(9);
       }
     }
-    return set;
+    return result;
   }
 }

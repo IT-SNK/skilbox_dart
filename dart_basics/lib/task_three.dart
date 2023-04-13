@@ -1,7 +1,8 @@
+List<dynamic> text = [22, "миллион", 556, "магазин", 5];
 class ThreeTask {
-  final one = int.parse('1');
-  final two = double.parse('2.2');
-  resultThreeTask() {
-    return 'IntParse: $one, DoubleParse$two';
+ 
+  List resultThreeTask(List text) {
+    List numbers = text.whereType<int>().toList();
+    return numbers;
   }
 }
