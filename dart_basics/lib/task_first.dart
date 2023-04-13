@@ -1,13 +1,25 @@
 class DelimetersCalculator {
   int nod(int a, int b) {
-    if (b == 0) {
-      return a;
-    } else {
-      return nod(b, a % b);
+    if (a < 0 || b < 0) {
+      throw ArgumentError('error');
     }
+
+    while (a != b) {
+      if (a > b) {
+        a = a - b;
+      } else {
+        b = b - a;
+      }
+    }
+
+    return a;
   }
 
-  noc(int c, int d) {
-    return c * d / nod(c, d);
+  double noc(c, d) {
+    if (c < 0 || d < 0) {
+      throw ArgumentError('error2');
+    }
+    double m = ((c * d) / nod(c, d));
+    return m;
   }
 }
