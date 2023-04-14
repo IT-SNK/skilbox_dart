@@ -1,34 +1,64 @@
-import '../lib/task_first.dart';
-import '../lib/task_eight.dart';
-import '../lib/task_five.dart';
-import '../lib/task_four.dart';
-import '../lib/task_second.dart';
-import '../lib/task_three.dart';
+import 'package:dart_basics/task_first.dart';
+import 'package:dart_basics/task_second.dart';
+import 'package:dart_basics/task_three.dart';
+import 'package:dart_basics/task_four.dart';
+import 'package:dart_basics/task_five.dart';
+import 'package:dart_basics/task_six.dart';
+import 'package:dart_basics/task_seven.dart';
+import 'package:dart_basics/task_eight.dart';
+
+
+
 
 void main() {
-  //task1
-  final task1 = DelimetersCalculator();
-  print(task1.nod(3, 4));
-  print(task1.noc(-6, -2));
-// //task2
-  final task2 = SecondTask();
+//task1
 
-  print(task2.resultSecondTask(x));
+  // final task1 = DelimetersCalculator();
+  // print(task1.nod(3, 4));
+  // print(task1.noc(-6, -2));
+
+//task2
+
+  final task2_1 = decimalToBinary(10);
+  final task2_2 = decimalToBinary(0);
+  print(task2_1);
+  print(task2_2);
+  final task2_3 = binaryToDecimal("1010");
+  final task2_4 = binaryToDecimal("0");
+  print(task2_3);
+  print(task2_4);
 
 // //task3
-  final task3 = ThreeTask();
-  print(task3.resultThreeTask(text));
+
+  final task3 = findNumbers(str);
+  print(task3);
+
 //task4
-  final task4 = TaskFour().taskFourMethod(words);
 
-  Map<String, int> task4_result = task4;
-  print(task4_result);
-// //task5
-  final task5 = TaskFive();
+  print(task4);
 
-  Set<int> task5_result = task5.findingnumbers(listNumbers);
-  print(task5_result);
+//task5
 
+  final task5 = getCollection(myCollection);
+  print(task5);
+
+ 
+//task7
+  print('nthRoot(81, 4): ${NthRoot.compute(81, 4)}');
+  print('nthRoot(81, 2): ${NthRoot.compute(81, 2)}');
+  print('nthRoot(0, 2): ${NthRoot.compute(0, 2)}');
+  try {
+    NthRoot.compute(20, 0);
+  } catch (e) {
+    print('nthRoot(20, 0): error: $e');
+  }
+  try {
+    NthRoot.compute(-20, 2);
+  } catch (e) {
+    print('nthRoot(-20, 2): error: $e');
+  }
+ 
+  
 //task8
   var admin = AdminUser('admin@mail.ru');
   var ivan = GeneralUser('ivan@gmail.com');
@@ -39,4 +69,7 @@ void main() {
     ..add(alisa);
 
   manager.printUsers();
+
+ 
+
 }

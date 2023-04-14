@@ -1,40 +1,30 @@
-String listNumbers = 'one, two, zero, zero';
 
-class TaskFive {
-  Set<int> findingnumbers(String numbers) {
-    Set<int> result = {};
-    List<String> words = numbers.split(', ');
-    for (String word in words) {
-      if (word == 'zero') {
-        result.add(0);
-      }
-      if (word == 'one') {
-        result.add(1);
-      }
-      if (word == 'two') {
-        result.add(2);
-      }
-      if (word == 'three') {
-        result.add(3);
-      }
-      if (word == 'four') {
-        result.add(4);
-      }
-      if (word == 'five') {
-        result.add(5);
-      }
-      if (word == 'six') {
-        result.add(6);
-      }
-      if (word == 'seven') {
-        result.add(7);
-      }
-      if (word == 'eight') {
-        result.add(8);
-      } else if (word == 'nine') {
-        result.add(9);
-      }
+List<String> myCollection = ['one', 'two', 'three', 'cat', 'dog'];
+
+List<int> getCollection(List<String> collection) {
+  List<int> digits = [];
+  for (String item in collection) {
+    if (item == 'zero') {
+      digits.add(0);
+    } else if (item == 'one') {
+      digits.add(1);
+    } else if (item == 'two') {
+      digits.add(2);
+    } else if (item == 'three') {
+      digits.add(3);
+    } else if (item == 'four') {
+      digits.add(4);
+    } else if (item == 'five') {
+      digits.add(5);
+    } else if (item == 'six') {
+      digits.add(6);
+    } else if (item == 'seven') {
+      digits.add(7);
+    } else if (item == 'eight') {
+      digits.add(8);
+    } else if (item == 'nine') {
+      digits.add(9);
     }
-    return result;
   }
+  return digits.toSet().toList();
 }
