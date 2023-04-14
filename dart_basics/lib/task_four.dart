@@ -1,11 +1,11 @@
-List<String> words = ['hello', 'world', 'helli'];
 
-class TaskFour {
-  Map<String, int> taskFourMethod(List<String> words) {
-    Map<String, int> allResults = {};
-    for (String word in words) {
-      allResults[word] = (allResults[word] ?? 0) + 1;
-    }
-    return allResults;
+List<String> words = ['hello', 'world', 'hello', 'dart'];
+
+Map<String, int> countWords(List<String> words) {
+  Map<String, int> result = {};
+  for (String word in words) {
+    result[word] = (result[word] ?? 0) + 1;
   }
+  return result;
 }
+Map<String, int> task4 = countWords(words);
